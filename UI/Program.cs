@@ -33,7 +33,7 @@ namespace UI
             using (var container = new Unity.UnityContainer().EnableDiagnostic())
             {
                 string connectionInfo = @"Data Source=12.11.10.1\DATA;Initial Catalog=DATA;User ID=Data;Password=Data;Application Name=UI.NET";
-                string userName = "yakovk";
+                string userName = "ykov";
 
                 container.RegisterType<IConfig, Config>(new InjectionProperty("ConnectionInfo", connectionInfo), new InjectionProperty("UserName", userName));
 
